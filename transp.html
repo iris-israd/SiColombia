@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transparencia | SÍ COLOMBIA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav aria-label="Principal">
+  <a id="logo" href="index.html"><img src="sicolombia.svg" alt="Logotipo de Sí Colombia"></a>
+  <button id="menu-btn" aria-expanded="false" aria-controls="menu">Menú</button>
+  <ul class="links" id="menu">
+      <li><a href="about.html">Sobre Nosotros</a></li>
+      <li><a href="statutes.html">Normativa</a></li>
+      <li><a href="programme.html">Programa</a></li>
+      <li><a href="transp.html" aria-current="page">Transparencia</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+      <li><a href="news.html">Noticias</a></li>
+      <li><a href="thinktank.html">Escuela Rosa</a></li>
+      <li><a href="join.html">Únete</a></li>
+  </ul>
+</nav>
+
+<header class="pagina-cab ">
+  <h1>Transparencia</h1>
+  <p>Cuentas claras y datos personales protegidos, sin letra pequeña. Publicamos nuestras finanzas y decisiones como lo establecen los artículos 29 y 47 a 51 de los Estatutos.</p>
+  <p class="nota-act" id="nota-act">Cargando última actualización…</p>
+  <nav class="subnav" aria-label="En esta página"><a href="#finanzas">Cuentas</a><a href="#veeduria">Veeduría</a><a href="#proteccion-datos">Protección de datos</a></nav>
+</header>
+
+<section id="finanzas" class="interior">
+  <h2>Cuentas claras, campaña por campaña</h2>
+  <div class="caja" style="margin-bottom:2.5rem">
+    <h3>Cómo funciona</h3>
+    <ol class="pasos-lista">
+      <li>Cada ingreso o gasto se registra por campaña, con fuente o concepto, fecha y monto.</li>
+      <li>Esta página lee ese registro (<code>finanzas.json</code>) y recalcula los totales cada vez que se visita.</li>
+      <li>Si no hay una campaña activa, lo decimos aquí en vez de dejar la página vacía.</li>
+    </ol>
+  </div>
+  <div id="contenido-finanzas"><p>Cargando información financiera…</p></div>
+</section>
+
+<section id="veeduria" class="alt"><div class="interior">
+  <h2>Veeduría de Transparencia</h2>
+  <p>Es el órgano que verifica la publicación abierta de cuentas y de procesos de toma de decisiones, y recibe observaciones de afiliados y ciudadanos. Las actas y decisiones de los órganos del movimiento son públicas, salvo la información reservada por ley o por protección de datos personales.</p>
+  <a class="btn" href="contact.html">Enviar una observación</a>
+</div></section>
+
+<section id="proteccion-datos" class="interior">
+  <h2>Qué hacemos con tus datos personales</h2>
+  <p>Todo dato que nos entregas al afiliarte, escribirnos o suscribirte al boletín se trata conforme a la Ley 1581 de 2012. Estos son los principios que aplicamos:</p>
+  <div class="rejilla-c">
+    <div class="caja"><h3>Solo para lo que autorizaste</h3><p>Usamos tus datos únicamente para el registro de afiliación, el boletín o para responder tu mensaje.</p></div>
+    <div class="caja"><h3>Acceso restringido</h3><p>La información queda en nuestros sistemas de registro, con acceso limitado al equipo que la necesita.</p></div>
+    <div class="caja"><h3>Derechos de los titulares</h3><p>Puedes conocer, actualizar, corregir o pedir la supresión de tus datos en cualquier momento.</p></div>
+    <div class="caja"><h3>Menores de edad</h3><p>Los datos de militantes juveniles se usan solo para la militancia, nunca para propaganda personalizada ni se comparten con terceros (Art. 18B).</p></div>
+  </div>
+  <p style="margin-top:1.5rem"><a href="privacidad.html"><b>Leer la política de tratamiento de datos</b></a></p>
+  <p class="base-legal">Fundamento: Ley 1475 de 2011 · Ley 1581 de 2012 · Estatutos del MSC, Arts. 29 y 47–51.</p>
+</section>
+
+<footer>
+  <div class="pie-grid">
+    <div><h3>Sí Colombia</h3><p>Gobernar para todos. Lo que nos une, nos representa.</p></div>
+    <div><h3>El movimiento</h3><ul><li><a href="about.html">Sobre Nosotros</a></li><li><a href="statutes.html">Normativa</a></li><li><a href="transp.html">Transparencia</a></li></ul></div>
+    <div><h3>Participa</h3><ul><li><a href="join.html">Únete</a></li><li><a href="thinktank.html">Escuela Rosa</a></li><li><a href="contact.html">Contacto</a></li><li><a href="privacidad.html">Tratamiento de datos</a></li></ul></div>
+  </div>
+  <small>© 2026 Sí Colombia. Todos los derechos reservados.</small>
+</footer>
+<script src="script.js"></script><script src="transparencia.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | SÍ COLOMBIA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav aria-label="Principal">
+  <a id="logo" href="index.html"><img src="sicolombia.svg" alt="Logotipo de Sí Colombia"></a>
+  <button id="menu-btn" aria-expanded="false" aria-controls="menu">Menú</button>
+  <ul class="links" id="menu">
+      <li><a href="about.html">Sobre Nosotros</a></li>
+      <li><a href="statutes.html">Normativa</a></li>
+      <li><a href="programme.html">Programa</a></li>
+      <li><a href="transp.html">Transparencia</a></li>
+      <li><a href="contact.html" aria-current="page">Contacto</a></li>
+      <li><a href="news.html">Noticias</a></li>
+      <li><a href="thinktank.html">Escuela Rosa</a></li>
+      <li><a href="join.html">Únete</a></li>
+  </ul>
+</nav>
+
+<header class="pagina-cab ">
+  <h1>Contacto</h1>
+  <p>Escríbenos, aporta al movimiento o suscríbete al boletín.</p>
+</header>
+
+<section class="interior">
+  <div class="paneles">
+    <div class="panel a">
+      <h2>Afíliate</h2>
+      <p>Regístrate como militante o simpatizante. Desde los 14 años, con autorización de tu representante legal si eres menor de edad.</p>
+      <a class="btn naranja" href="join.html">Ir al formulario</a>
+    </div>
+    <div class="panel b">
+      <h2>Aporta</h2>
+      <p>Los aportes ciudadanos sostienen el movimiento, dentro de los límites de la ley, y se publican en Transparencia.</p>
+      <div class="montos" id="montos">
+        <button type="button" data-v="$20.000">$20.000</button>
+        <button type="button" data-v="$50.000" class="sel">$50.000</button>
+        <button type="button" data-v="$100.000">$100.000</button>
+        <button type="button" data-v="otro monto">Otro monto</button>
+      </div>
+      <a class="btn naranja" href="#formulario" id="aportar">Quiero aportar</a>
+    </div>
+  </div>
+</section>
+
+<section id="formulario" class="interior dos-col" style="padding-top:0">
+  <div>
+    <h2>Sigamos en contacto</h2>
+    <p>Recibe el boletín con avances del programa y espacios de participación en tu territorio, o cuéntanos lo que necesites.</p>
+    <div class="info-lista">
+      <div><span>Correo</span><a href="mailto:contacto@sicolombia.co">contacto@sicolombia.co</a></div>
+      <div><span>Sede</span><a href="https://www.google.com/maps/search/?api=1&query=Cali,+Colombia" target="_blank" rel="noopener">Santiago de Cali, Valle del Cauca</a></div>
+      <div><span>Datos personales</span>Tratados conforme a la Ley 1581 de 2012.</div>
+    </div>
+  </div>
+  <div>
+    <form data-sc-form="contacto" data-confirm="confirmacion" data-netlify="true" netlify-honeypot="empresa" name="contacto" method="POST">
+      <input type="hidden" name="form-name" value="contacto">
+      <input class="field" type="text" name="nombre" placeholder="Nombre completo" required>
+      <input class="field" type="email" name="email" placeholder="Correo electrónico" required>
+      <input class="field" type="text" name="ciudad" placeholder="Ciudad">
+      <select class="field" name="motivo" id="motivo" aria-label="Motivo">
+        <option>Quiero escribirles</option><option>Quiero recibir el boletín</option><option>Quiero aportar</option><option>Soy prensa</option><option>Observación para la Veeduría</option>
+      </select>
+      <textarea class="field" name="mensaje" id="mensaje" rows="5" placeholder="Mensaje"></textarea>
+      <label class="consent"><input type="checkbox" name="autorizaDatos" required> Autorizo el tratamiento de mis datos conforme a la <a href="privacidad.html">política de tratamiento de datos</a> (Ley 1581 de 2012).</label>
+      <input type="text" name="empresa" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="btn" style="width:100%">Enviar</button>
+      <p class="form-error" hidden></p>
+    </form>
+    <div id="confirmacion" class="confirmacion"><h3>Gracias por escribirnos</h3><p>Recibimos tu mensaje y te responderemos pronto.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="pie-grid">
+    <div><h3>Sí Colombia</h3><p>Gobernar para todos. Lo que nos une, nos representa.</p></div>
+    <div><h3>El movimiento</h3><ul><li><a href="about.html">Sobre Nosotros</a></li><li><a href="statutes.html">Normativa</a></li><li><a href="transp.html">Transparencia</a></li></ul></div>
+    <div><h3>Participa</h3><ul><li><a href="join.html">Únete</a></li><li><a href="thinktank.html">Escuela Rosa</a></li><li><a href="contact.html">Contacto</a></li><li><a href="privacidad.html">Tratamiento de datos</a></li></ul></div>
+  </div>
+  <small>© 2026 Sí Colombia. Todos los derechos reservados.</small>
+</footer>
+<script src="script.js"></script><script src="forms.js"></script><script src="formularios.js"></script>
+<script>
+  const montos = document.querySelectorAll('#montos button');
+  montos.forEach(b => b.addEventListener('click', () => { montos.forEach(x => x.classList.remove('sel')); b.classList.add('sel'); }));
+  document.getElementById('aportar').addEventListener('click', () => {
+    document.getElementById('motivo').value = 'Quiero aportar';
+    document.getElementById('mensaje').value = 'Quiero hacer un aporte de ' + document.querySelector('#montos .sel').dataset.v + '.';
+  });
+</script>
+</body>
+</html>

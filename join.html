@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Únete | SÍ COLOMBIA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav aria-label="Principal">
+  <a id="logo" href="index.html"><img src="sicolombia.svg" alt="Logotipo de Sí Colombia"></a>
+  <button id="menu-btn" aria-expanded="false" aria-controls="menu">Menú</button>
+  <ul class="links" id="menu">
+      <li><a href="about.html">Sobre Nosotros</a></li>
+      <li><a href="statutes.html">Normativa</a></li>
+      <li><a href="programme.html">Programa</a></li>
+      <li><a href="transp.html">Transparencia</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+      <li><a href="news.html">Noticias</a></li>
+      <li><a href="thinktank.html">Escuela Rosa</a></li>
+      <li><a href="join.html" aria-current="page">Únete</a></li>
+  </ul>
+</nav>
+
+<header class="pagina-cab ">
+  <h1>Únete</h1>
+  <p>La Constitución garantiza el derecho de todo ciudadano a afiliarse libremente a un movimiento político. Puedes hacerlo desde los 14 años.</p>
+</header>
+
+<section class="interior">
+  <h2>Dos formas de hacer parte</h2>
+  <div class="rejilla-c">
+    <div class="caja"><span class="etq">Simpatizante</span><h3>Sigues el movimiento de cerca</h3><p>Participas en las actividades de escucha y en los equipos de trabajo, sin voto en los órganos de decisión.</p></div>
+    <div class="caja"><span class="etq">Militante</span><h3>Haces parte del registro formal</h3><p>Quedas en el registro de afiliados, con voz y voto en los órganos en los que tengas representación. Si tienes entre 14 y 17 años, haces parte de Sí a la Juventud.</p></div>
+  </div>
+</section>
+
+<section class="interior form-caja">
+  <form id="afForm" data-sc-form="afiliacion" data-confirm="afConfirm" data-netlify="true" netlify-honeypot="empresa" name="afiliacion" method="POST">
+    <input type="hidden" name="form-name" value="afiliacion">
+    <div class="form-sub">Tipo de vinculación</div>
+    <div class="vinc-choice">
+      <label class="vinc-card sel"><input type="radio" name="vinculacion" value="simpatizante" checked><h4>Simpatizante</h4><p>Quiero mantenerme informado y apoyar sin registro formal.</p></label>
+      <label class="vinc-card"><input type="radio" name="vinculacion" value="militante"><h4>Militante</h4><p>Quiero inscribirme formalmente en el registro de afiliados.</p></label>
+    </div>
+
+    <div class="form-sub">Datos personales</div>
+    <div class="form-grid">
+      <input class="field full" type="text" name="nombre" placeholder="Nombres y apellidos" required>
+      <select class="field" name="tipoDocumento" required><option value="" disabled selected>Tipo de documento</option><option>Cédula de ciudadanía</option><option>Cédula de extranjería</option><option>Tarjeta de identidad</option><option>Pasaporte</option></select>
+      <input class="field" type="text" name="numeroDocumento" placeholder="Número de documento" required>
+      <label class="full" style="font-size:.85rem;margin-bottom:.2rem">Fecha de nacimiento</label>
+      <input class="field full" type="date" name="fechaNacimiento" required>
+      <input class="field" type="tel" name="telefono" placeholder="Teléfono o WhatsApp" required>
+      <select class="field" name="region" required><option value="" disabled selected>Región / departamento</option><optgroup label="Región Caribe"><option>Atlántico</option><option>Bolívar</option><option>Cesar</option><option>Córdoba</option><option>La Guajira</option><option>Magdalena</option><option>Sucre</option><option>San Andrés y Providencia</option></optgroup><optgroup label="Región Andina"><option>Antioquia</option><option>Bogotá D.C.</option><option>Boyacá</option><option>Caldas</option><option>Cundinamarca</option><option>Huila</option><option>Norte de Santander</option><option>Quindío</option><option>Risaralda</option><option>Santander</option><option>Tolima</option></optgroup><optgroup label="Región Pacífica"><option>Cauca</option><option>Chocó</option><option>Nariño</option><option>Valle del Cauca</option></optgroup><optgroup label="Región Orinoquía"><option>Arauca</option><option>Casanare</option><option>Meta</option><option>Vichada</option></optgroup><optgroup label="Región Amazonía"><option>Amazonas</option><option>Caquetá</option><option>Guainía</option><option>Guaviare</option><option>Putumayo</option><option>Vaupés</option></optgroup></select>
+      <input class="field" type="text" name="ciudad" placeholder="Municipio o ciudad" required>
+      <input class="field" type="email" name="email" placeholder="Correo electrónico" required>
+    </div>
+
+    <div id="bloque-acudiente">
+      <div class="form-sub" style="margin-top:0">Autorización del representante legal</div>
+      <p class="aviso">Para personas menores de 18 años, la autorización de su padre, madre o representante legal es requisito de validez de la afiliación y puede revocarse en cualquier momento (Art. 18B).</p>
+      <div class="form-grid" style="margin-top:1rem">
+        <input class="field full" type="text" name="acudienteNombre" placeholder="Nombre del representante legal">
+        <input class="field" type="text" name="acudienteDocumento" placeholder="Documento del representante">
+        <input class="field" type="email" name="acudienteEmail" placeholder="Correo del representante">
+      </div>
+      <label class="consent"><input type="checkbox" name="autorizaAcudiente"> Como representante legal, autorizo la afiliación de la persona menor de edad y el tratamiento de sus datos solo para fines de la militancia.</label>
+    </div>
+
+    <div class="form-sub">Declaraciones</div>
+    <label class="consent"><input type="checkbox" name="declaracionPartido"> Declaro que no pertenezco a otro partido o movimiento político con personería jurídica (obligatorio para militantes).</label>
+    <label class="consent"><input type="checkbox" name="autorizaDatos" required> Autorizo el tratamiento de mis datos personales conforme a la <a href="privacidad.html">política de tratamiento de datos</a> (Ley 1581 de 2012) para los fines de este registro.</label>
+    <input type="text" name="empresa" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button type="submit" class="btn" style="width:100%">Enviar afiliación</button>
+    <p class="form-error" hidden></p>
+  </form>
+  <div id="afConfirm" class="confirmacion"><h2>Gracias por unirte a Sí Colombia</h2><p>Recibimos tu registro. Si te inscribiste como militante, te escribiremos para confirmar tu inclusión en el registro de afiliados. Si eres menor de edad, verificaremos la autorización de tu representante legal.</p><a class="btn" href="index.html">Volver al inicio</a></div>
+  <p class="base-legal">Fundamento: Constitución Política, Arts. 107 y 108 · Ley 130 de 1994 · Ley 1475 de 2011 · Ley 1581 de 2012 · Estatutos del MSC, Arts. 14–18J.</p>
+</section>
+
+<footer>
+  <div class="pie-grid">
+    <div><h3>Sí Colombia</h3><p>Gobernar para todos. Lo que nos une, nos representa.</p></div>
+    <div><h3>El movimiento</h3><ul><li><a href="about.html">Sobre Nosotros</a></li><li><a href="statutes.html">Normativa</a></li><li><a href="transp.html">Transparencia</a></li></ul></div>
+    <div><h3>Participa</h3><ul><li><a href="join.html">Únete</a></li><li><a href="thinktank.html">Escuela Rosa</a></li><li><a href="contact.html">Contacto</a></li><li><a href="privacidad.html">Tratamiento de datos</a></li></ul></div>
+  </div>
+  <small>© 2026 Sí Colombia. Todos los derechos reservados.</small>
+</footer>
+<script src="script.js"></script><script src="forms.js"></script><script src="formularios.js"></script><script src="join.js"></script>
+</body>
+</html>

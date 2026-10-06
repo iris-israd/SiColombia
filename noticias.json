@@ -1,0 +1,16 @@
+{
+  "noticias": [
+    {"id":"afiliacion-desde-los-14","fecha":"2026-10-05","categoria":"Movimiento",
+     "titulo":"Sí Colombia abre su afiliación desde los 14 años",
+     "resumen":"Las juventudes pueden ser militantes con autorización de su representante legal.",
+     "cuerpo":["Sí Colombia admite como militantes a las personas colombianas desde los 14 años, con la autorización de su padre, madre o representante legal.","Quienes tienen entre 14 y 17 años hacen parte de Sí a la Juventud, con su propia coordinación nacional y territorial. Al cumplir 18 años adquieren la plenitud de derechos de los afiliados."]},
+    {"id":"constitucion-del-movimiento","fecha":"2026-08-30","categoria":"Movimiento",
+     "titulo":"Nace Sí Colombia en Santiago de Cali",
+     "resumen":"El 30 de agosto de 2026 se constituyó el movimiento por iniciativa de Iris Maia Escorcia.",
+     "cuerpo":["Sí Colombia fue constituido como movimiento independiente el 30 de agosto de 2026 en Santiago de Cali, Valle del Cauca.","Tiene como antecedente el Movimiento Nueva Síntesis, surgido el 23 de abril de 2026."]},
+    {"id":"nace-el-escorcianismo","fecha":"2026-08-28","categoria":"Ideas",
+     "titulo":"Surge el escorcianismo, la ideología del movimiento",
+     "resumen":"Una corriente progresista y socialrepublicana basada en la avanzada social controlada y la seguridad nacional.",
+     "cuerpo":["El 28 de agosto de 2026 surgió el escorcianismo, corriente sociopolítica ideada por Iris Maia Escorcia.","Dos días después, con la fundación formal del movimiento, pasó a ser su ideología fundacional. Puedes conocer sus ejes en la página del Programa."]}
+  ]
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escuela Rosa | SÍ COLOMBIA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav aria-label="Principal">
+  <a id="logo" href="index.html"><img src="sicolombia.svg" alt="Logotipo de Sí Colombia"></a>
+  <button id="menu-btn" aria-expanded="false" aria-controls="menu">Menú</button>
+  <ul class="links" id="menu">
+      <li><a href="about.html">Sobre Nosotros</a></li>
+      <li><a href="statutes.html">Normativa</a></li>
+      <li><a href="programme.html">Programa</a></li>
+      <li><a href="transp.html">Transparencia</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+      <li><a href="news.html">Noticias</a></li>
+      <li><a href="thinktank.html" aria-current="page">Escuela Rosa</a></li>
+      <li><a href="join.html">Únete</a></li>
+  </ul>
+</nav>
+
+<header class="pagina-cab rosa">
+  <h1>Escuela Rosa</h1>
+  <p>La escuela de pensamiento y formación de Sí Colombia: ideas con rigor, para quien quiere entender, debatir y gobernar mejor.</p>
+  <nav class="subnav" aria-label="En esta página"><a href="#programas" style="color:#1E1B16">Programas</a><a href="#cuadernos" style="color:#1E1B16">Cuadernos</a><a href="#inscripcion" style="color:#1E1B16">Inscripción</a></nav>
+</header>
+
+<section class="interior">
+  <div class="dos-col">
+    <div><h2>Pensar antes de proponer</h2></div>
+    <div><p>El valor del rigor exige que cada propuesta tenga diagnóstico técnico, fuente verificable y ruta de ejecución. La Escuela Rosa es el espacio donde se forman esas ideas y quienes las defienden: abierta a afiliados, simpatizantes y ciudadanía en general.</p></div>
+  </div>
+</section>
+
+<section id="programas" class="alt"><div class="interior">
+  <h2>Programas de formación</h2>
+  <p>Las fechas y cupos se anunciarán por correo. Inscríbete abajo y te avisamos cuando abra cada programa.</p>
+  <div class="rejilla-c">
+    <div class="caja"><span class="etq">Introducción</span><h3>Fundamentos del escorcianismo</h3><p>Ideas, ejes y orígenes de la ideología del movimiento. Para quien llega por primera vez.</p></div>    <div class="caja"><span class="etq">Pensamiento</span><h3>Tecnodesarrollismo y política de ciencia</h3><p>Estado impulsor, triple hélice, sectores estratégicos y salvaguardas.</p></div>    <div class="caja"><span class="etq">Gestión pública</span><h3>Gobierno abierto y electrónico</h3><p>Datos abiertos, trámites digitales y participación ciudadana.</p></div>    <div class="caja"><span class="etq">Liderazgo</span><h3>Formación para candidatas y candidatos</h3><p>Código de Ética, financiación y rendición de cuentas, y construcción de programa.</p></div>    <div class="caja"><span class="etq">Territorio</span><h3>Escucha territorial</h3><p>Cómo trabajan los Equipos Regionales de Escucha antes de formular políticas.</p></div>    <div class="caja"><span class="etq">Juventudes</span><h3>Escuela juvenil (14 a 17 años)</h3><p>Formación política, cívica y técnica adecuada a su edad, con acompañamiento de adultos responsables.</p></div>
+  </div>
+</div></section>
+
+<section id="cuadernos" class="interior">
+  <h2>Cuadernos de pensamiento</h2>
+  <p>Publicaciones breves que desarrollan las ideas del movimiento. Estarán disponibles para descargar a medida que se publiquen.</p>
+  <div class="rejilla-c">
+    <div class="caja"><span class="etq">Cuaderno 1</span><h3>¿Qué es el escorcianismo?</h3><p>En preparación.</p></div>    <div class="caja"><span class="etq">Cuaderno 2</span><h3>Tecnodesarrollismo: método y prioridades</h3><p>En preparación.</p></div>    <div class="caja"><span class="etq">Cuaderno 3</span><h3>Seguridad con debido proceso</h3><p>En preparación.</p></div>
+  </div>
+</section>
+
+<section id="inscripcion" class="alt"><div class="interior form-caja">
+  <h2>Inscríbete a la lista de interés</h2>
+  <form data-sc-form="escuela" data-confirm="conf-escuela" data-netlify="true" netlify-honeypot="empresa" name="escuela" method="POST">
+    <input type="hidden" name="form-name" value="escuela">
+    <div class="form-grid">
+      <input class="field full" type="text" name="nombre" placeholder="Nombre completo" required>
+      <input class="field" type="email" name="email" placeholder="Correo electrónico" required>
+      <input class="field" type="text" name="ciudad" placeholder="Ciudad">
+      <select class="field full" name="programa" required><option value="" disabled selected>Programa de interés</option><option>Fundamentos del escorcianismo</option><option>Tecnodesarrollismo y política de ciencia</option><option>Gobierno abierto y electrónico</option><option>Formación para candidatas y candidatos</option><option>Escucha territorial</option><option>Escuela juvenil (14 a 17 años)</option></select>
+    </div>
+    <label class="consent"><input type="checkbox" name="autorizaDatos" required> Autorizo el tratamiento de mis datos conforme a la <a href="privacidad.html">política de tratamiento de datos</a>.</label>
+    <input type="text" name="empresa" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button type="submit" class="btn">Quiero participar</button>
+    <p class="form-error" hidden></p>
+  </form>
+  <div id="conf-escuela" class="confirmacion"><h3>Listo, quedaste en la lista</h3><p>Te escribiremos cuando abra el programa que elegiste.</p></div>
+</div></section>
+
+<footer>
+  <div class="pie-grid">
+    <div><h3>Sí Colombia</h3><p>Gobernar para todos. Lo que nos une, nos representa.</p></div>
+    <div><h3>El movimiento</h3><ul><li><a href="about.html">Sobre Nosotros</a></li><li><a href="statutes.html">Normativa</a></li><li><a href="transp.html">Transparencia</a></li></ul></div>
+    <div><h3>Participa</h3><ul><li><a href="join.html">Únete</a></li><li><a href="thinktank.html">Escuela Rosa</a></li><li><a href="contact.html">Contacto</a></li><li><a href="privacidad.html">Tratamiento de datos</a></li></ul></div>
+  </div>
+  <small>© 2026 Sí Colombia. Todos los derechos reservados.</small>
+</footer>
+<script src="script.js"></script><script src="forms.js"></script><script src="formularios.js"></script>
+</body>
+</html>
